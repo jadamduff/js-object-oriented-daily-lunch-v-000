@@ -20,6 +20,20 @@ class Neighborhood {
       }.bind(this)
     );
   }
+  customers() {
+    let customerList = [];
+    for (const delivery of this.deliveries()) {
+      customerList.push(delivery.customer());
+    }
+    return customerList;
+  }
+  meals() {
+    let mealList = [];
+    for (const delivery of this.deliveries()) {
+      mealList.push(delivery.meal());
+    }
+    return mealList;
+  }
 }
 
 class Meal {
