@@ -88,6 +88,13 @@ class Customer {
     }
     return mealList;
   }
+  totalSpent() {
+    let total = 0;
+    for (const meal of this.meals()) {
+      total += meal.price;
+    }
+    return total;
+  }
 }
 
 class Delivery {
