@@ -62,6 +62,7 @@ class Meal {
         customerList.push(delivery.customer());
       }
     }
+    return customerList;
   }
 }
 
