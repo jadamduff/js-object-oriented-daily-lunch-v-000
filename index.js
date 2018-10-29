@@ -64,6 +64,13 @@ class Meal {
     }
     return customerList;
   }
+  byPrice() {
+    return store.meals.sort(
+      function(a, b) {
+        return b - a;
+      }
+    );
+  }
 }
 
 class Customer {
