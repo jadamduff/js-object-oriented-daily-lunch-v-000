@@ -66,7 +66,7 @@ class Meal {
   }
 }
 
-let Meal.byPrice = function() {
+Meal.byPrice = function() {
   return store.meals.sort(
     function(a, b) {
       return a.price - b.price;
