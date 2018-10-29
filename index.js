@@ -64,11 +64,6 @@ class Meal {
     }
     return customerList;
   }
-  this.byPrice = store.meals.sort(
-      function(a, b) {
-        return b - a;
-      }
-    );
 }
 
 class Customer {
