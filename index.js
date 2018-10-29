@@ -55,6 +55,14 @@ class Meal {
       }.bind(this)
     );
   }
+  customers() {
+    let customerList = [];
+    for (const delivery of this.deliveries()) {
+      if (!customerList.includes(delivery.customer())) {
+        customerList.push(delivery.customer());
+      }
+    }
+  }
 }
 
 class Customer {
