@@ -68,7 +68,7 @@ class Customer {
   meals() {
     let mealList = [];
     for (const delivery of this.deliveries()) {
-      mealList.push(delivery.customer());
+      mealList.push(delivery.meal());
     }
     return mealList;
   }
