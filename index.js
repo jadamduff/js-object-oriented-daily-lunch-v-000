@@ -24,14 +24,14 @@ class Neighborhood {
     let customerList = [];
     for (const delivery of this.deliveries()) {
       customerList.push(delivery.customer());
-    }.bind(this)
+    }
     return customerList;
   }
   meals() {
     let mealList = [];
     for (const delivery of this.deliveries()) {
       mealList.push(delivery.meal());
-    }.bind(this)
+    }
     return mealList;
   }
 }
