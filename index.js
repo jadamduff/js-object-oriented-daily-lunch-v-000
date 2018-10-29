@@ -67,7 +67,7 @@ class Customer {
   }
   meals() {
     let mealList = [];
-    for (const delivery in this.deliveries()) {
+    for (const delivery of this.deliveries()) {
       if (!mealList.includes(delivery.customer())) {
         mealList.push(delivery.customer());
       }
