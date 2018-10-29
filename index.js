@@ -66,6 +66,14 @@ class Meal {
   }
 }
 
+Meal.byPrice() = function() {
+  return store.meals.sort(
+    function(a, b) {
+      return a.price - b.price;
+    }
+  );
+}
+
 class Customer {
   constructor(name, neighborhoodId) {
     this.name = name;
