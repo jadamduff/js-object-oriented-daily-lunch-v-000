@@ -32,7 +32,9 @@ class Neighborhood {
   meals() {
     let mealList = [];
     for (const delivery of this.deliveries()) {
-      mealList.push(delivery.meal());
+      if (!mealList.includes(delivery.meal())) {
+        mealList.push(delivery.meal());
+      }
     }
     return mealList;
   }
