@@ -66,8 +66,6 @@ class Meal {
   }
 }
 
-let Meal.byPrice = 2;
-
 class Customer {
   constructor(name, neighborhoodId) {
     this.name = name;
