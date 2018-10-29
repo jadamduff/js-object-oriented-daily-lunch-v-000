@@ -23,7 +23,9 @@ class Neighborhood {
   customers() {
     let customerList = [];
     for (const delivery of this.deliveries()) {
-      customerList.push(delivery.customer());
+      if (!customerList.includes(delivery.customer())) {
+        customerList.push(delivery.customer());
+      }
     }
     return customerList;
   }
