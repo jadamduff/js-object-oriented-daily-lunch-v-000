@@ -64,10 +64,9 @@ class Meal {
     }
     return customerList;
   }
-  byPrice() {
-    return 2
-  }
 }
+
+let Meal.byPrice = 2;
 
 class Customer {
   constructor(name, neighborhoodId) {
